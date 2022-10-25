@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/presentation/views/home_screen.dart';
 import 'package:flutter_application_1/presentation/widgets/custom_buttom.dart';
 import 'package:flutter_application_1/presentation/widgets/custom_text_field.dart';
 
@@ -89,8 +90,11 @@ CustomButton(
   enabled: (_email.isNotEmpty && _password.isNotEmpty)? true :false ,
   title: "Connexion",
   onPressed: () { 
-    print(_email);
-   print(_password);
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (BuildContext context) => const HomeScreen())
+    );
+    //print(_email);
+   //print(_password);
  
 },),
 
