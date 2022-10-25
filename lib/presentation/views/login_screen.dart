@@ -66,9 +66,10 @@ Column(children: [
     padding: EdgeInsets.only(bottom: 20),
     child: Text("Log In",
     style: TextStyle(
+      fontFamily: "Montserrat",
       color: Colors.black,
       fontSize: 30,
-      fontWeight: FontWeight.bold,
+      fontWeight: FontWeight.w500,
       letterSpacing:1,
       wordSpacing: 1
     ),
